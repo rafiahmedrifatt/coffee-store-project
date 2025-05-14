@@ -3,7 +3,7 @@ import { Outlet } from 'react-router';
 
 const MainLayouts = () => {
     return (
-        <div>
+        <div className='w-10/12 mx-auto'>
             <Outlet />
         </div>
     );

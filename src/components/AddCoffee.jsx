@@ -25,8 +25,8 @@ const AddCoffee = () => {
                     <input type="text" className="input w-full" name='name' placeholder="Enter Coffee Name Here" />
                 </fieldset>
                 <fieldset className="fieldset">
-                    <legend className="fieldset-legend">Chef</legend>
-                    <input type="text" className="input w-full" name='chef' placeholder="Enter Coffee Chef" />
+                    <legend className="fieldset-legend">Price</legend>
+                    <input type="number" className="input w-full" name='price' placeholder="Enter Coffee Chef" />
                 </fieldset>
                 <fieldset className="fieldset">
                     <legend className="fieldset-legend">Supplier</legend>

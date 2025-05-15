@@ -1,16 +1,18 @@
 import React from 'react';
 
-const GetCoffee = () => {
+const CoffeeCard = ({ singleCoffee }) => {
+    const { name, photo, price, taste } = singleCoffee;
     return (
         <div className="card card-side bg-base-100 shadow-sm">
             <figure>
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    src={`${photo}`}
                     alt="Movie" />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">New movie is released!</h2>
-                <p>Click the button to watch on Jetflix app.</p>
+                <h2 className="card-title">Name: {name}</h2>
+                <p>Price: {price} Taka</p>
+                <p>Taste: {taste}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">Watch</button>
                 </div>
@@ -19,4 +21,4 @@ const GetCoffee = () => {
     );
 };
 
-export default GetCoffee;
+export default CoffeeCard;

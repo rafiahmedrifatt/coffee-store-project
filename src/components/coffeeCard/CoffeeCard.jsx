@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDelete, MdEdit, MdRemoveRedEye } from 'react-icons/md';
+import { Link } from 'react-router';
 
 const CoffeeCard = ({ singleCoffee }) => {
     const { name, photo, price, taste, _id } = singleCoffee;
@@ -28,13 +29,13 @@ const CoffeeCard = ({ singleCoffee }) => {
             </div>
             <div className="card-body">
                 <div>
-                    <button className='btn bg-[#D2B48C]'><MdRemoveRedEye /></button>
+                    <Link to={`coffee/${_id}`} className='btn bg-[#D2B48C]'><MdRemoveRedEye /></Link>
                 </div>
                 <div>
-                    <button className='btn btn-neutral'><MdEdit /></button>
+                    <Link className='btn btn-neutral'><MdEdit /></Link>
                 </div>
                 <div>
-                    <button onClick={() => handleDelete(_id)} className='btn btn-error text-white'><MdDelete /></button>
+                    <Link onClick={() => handleDelete(_id)} className='btn btn-error text-white'><MdDelete /></Link>
                 </div>
             </div>
         </div>

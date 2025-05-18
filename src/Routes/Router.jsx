@@ -3,6 +3,8 @@ import MainLayouts from "../layouts/MainLayouts";
 import Home from "../pages/Home";
 import AddCoffee from "../pages/AddCoffee";
 import CoffeeDetails from "../pages/CoffeeDetails";
+import SignIn from "../components/signin/SignIn";
+import SignUp from "../components/signUp/SignUp";
 
 const Router = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const Router = createBrowserRouter([
             {
                 path: '/add',
                 Component: AddCoffee
+            },
+            {
+                path: '/signin',
+                Component: SignIn
+            },
+            {
+                path: '/signup',
+                Component: SignUp
             },
         ]
     }

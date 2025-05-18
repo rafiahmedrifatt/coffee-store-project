@@ -12,9 +12,9 @@ const AuthProvider = ({ children }) => {
 
     const user = "hello yamate kudasai"
 
-    const userData = () => {
+    const userData = {
         createUser,
-            user
+        user
     }
     return <AuthContext value={userData}>{children}</AuthContext>
 
